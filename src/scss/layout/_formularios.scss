@@ -1,0 +1,68 @@
+.formulario-menu {
+    h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.formulario {
+    color: $blanco;
+    font-family: $fuentePrueba;
+
+    fieldset {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin: 2rem 0 0 0;
+    }
+
+    legend {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    input:not([type="submit"]),
+    textarea,
+    select {
+        padding: 1rem;
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        color: $blanco;
+        border: 1px solid $grisOscuro;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    option {
+        color: $principal;
+    }
+
+
+    textarea {
+        height: 20rem;
+    }
+
+    .forma-contacto {
+        max-width: 30rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type="radio"] {
+        margin: 0;
+        width: auto;
+    }
+}

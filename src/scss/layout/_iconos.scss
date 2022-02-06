@@ -1,0 +1,30 @@
+.iconos {
+    img {
+        height: 8rem;
+    }
+    
+    margin-top: 5rem;
+
+    @include tablet {
+        img {
+            height: 10rem;
+        }
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
+
+.info-iconos {
+    text-align: center;
+
+    @include tablet {
+        margin-right: 4rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

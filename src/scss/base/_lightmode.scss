@@ -1,0 +1,99 @@
+.light-mode {
+    background-color: $blanco;
+
+    .header {
+        background-color: $gris;
+        
+        a {
+            color: $principal;
+        }
+
+        .light-mode-boton {
+            filter: invert(0);
+        }
+    }
+
+    h2, h3, h4, p {
+        color: $principal;
+    }
+
+    .parrafo-titulo {
+        color: $blanco;
+    }
+
+    .anuncio {
+        background-color: $gris;
+        border: 1px solid lighten($grisOscuro, 40);
+
+        .icono-invert {
+            filter: invert(0);
+        }
+    }
+
+    .boton-global {
+        color: $principal;
+        border: 2px solid $principal;
+
+        &:hover {
+            border: 2px solid $secundario;
+        }
+    }
+
+    .imagen-contacto {
+        h3,p {
+            color: $blanco;
+        }
+    }
+
+    .logo-contactos {
+        h2,p, button {
+            color: $blanco;
+        }
+
+        .boton-global {
+            color: $blanco;
+            border: 2px solid $blanco;
+    
+            &:hover {
+                border: 2px solid $secundario;
+            }
+        }
+    }
+
+    /* Formulario */
+    .formulario {
+        color: $principal;
+
+        select,
+        p,
+        textarea {
+            color: $principal;
+        }
+
+        input:not([type="submit"]) {
+            color: $principal;
+        }
+    }
+
+    /* Tabla de Administración */
+
+    .alerta {
+        color: $blanco;
+    }
+
+    table.propiedades {
+        tbody {
+            td {
+                color: $principal;
+            }
+        }
+    }
+
+    /* Anuncio de la Propiedad */
+    .iconos-caracteristicas {
+        .icono-invert {
+            filter: invert(0);
+        }
+    }
+    
+}

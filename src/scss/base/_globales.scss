@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: $principal;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: $fuenteParrafo;
+    color: $blanco;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+    @include tablet {
+        font-size: 1.8rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+h1 {
+    font-family: $fuenteSecundaria;
+    text-transform: uppercase;
+    color: $secundario;
+    font-size: 4rem;
+    color: $blanco;
+    font-weight: 400;
+
+    @include tablet {
+        font-size: 12rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    color: $blanco;
+    font-family: $fuentePrincipal;
+    text-align: center;
+    margin: 2rem 0;
+    
+    @include tablet {
+        font-size: 5rem;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+h3 {
+    color: $blanco;
+    font-family: $fuenteParrafo;
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+    color: $blanco;
+    font-family: $fuentePrueba;
+    font-weight: 300;
+    
+    @include tablet {
+        font-size: 2.8rem;
+    } 
+}
+
+li {
+    color: $blanco;
+    font-family: $fuenteParrafo;
+}
+
+.parrafo-titulo {
+    margin-top: 7rem;
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+.seccion-inferior {
+    h4 {
+        margin-top: 2rem;
+    }
+    h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    @include tablet {
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.blog {
+    margin-bottom: 4rem;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+
+    
+}
+
+.imagen-blog {
+    margin-right: 3rem;
+}
+
+.entrada-blog {
+    margin-bottom: 2rem;
+    .informacion-blog {
+        font-size: 2rem;
+        span {
+            color: $secundarioOscuro;
+            font-weight: bold;
+        }
+    }
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.texto-blog {
+    h4 {
+        &::after {
+            content: "";
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-top: 1rem;
+        }
+    }
+}
+
+/** Testimoniales **/
+
+.testimonial {
+    background-color: lighten($grisOscuro, 30);
+    padding: 2rem;
+    border-radius: 2rem;
+    color: $blanco;
+    font-size: 2.4rem;
+
+    blockquote {
+        padding-left: 2.5rem;
+        position: relative;
+        line-height: 4rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../../build/img/comilla.svg);
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 8rem;
+            display: block;
+            left: -4rem;
+        }
+    }
+
+    p {
+        font-size: 2rem;
+        color: $blanco;
+        text-align: right;
+    }
+}
+
+/** Parte del Footer **/
+
+.logo-contactos {
+    background-image: url(../img/Contactos.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        min-height: 60rem;
+    }
+}
+
+.seccion-contactos {
+    display: block;
+    text-align: center;
+}
+
+.botones-contactos {
+    display: flex;
+    justify-content: center;
+
+    .separacion-contacto {
+        margin-right: 2rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.copyright {
+    margin-top: 10rem;
+}

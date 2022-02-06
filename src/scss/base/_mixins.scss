@@ -1,0 +1,52 @@
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+/** Mixin para un display GRID **/
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, minmax(0, 1fr));
+}
+
+@mixin border($width) {
+    color: $secundario;
+    align-items: center;
+    height: .1rem;
+    width: $width;
+}
+
+/** Mixin Botones **/
+
+@mixin boton($bgcolor, $padding, $tamaño, $color, $display) {
+    background-color: $bgcolor;
+    padding: $padding;
+    font-size: $tamaño;
+    font-family: $fuentePrueba;
+    color: $color;
+    display: $display;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    border-radius: .5rem;
+    border: none;
+    
+    &:hover {
+        background-color: darken($bgcolor, 10);
+        cursor: pointer;
+    }
+}

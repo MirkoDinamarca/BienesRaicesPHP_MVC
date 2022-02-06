@@ -1,0 +1,26 @@
+.no-webp .imagen-contacto {
+    background-image: url(../../build/img/encuentra.jpg);
+}
+
+.webp .imagen-contacto {
+    background-image: url(../../build/img/encuentra.webp);
+}
+
+.imagen-contacto {
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem;
+    text-align: center;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10rem 0;
+    }
+    
+
+    p {
+        margin-top: 5rem;
+    }
+}

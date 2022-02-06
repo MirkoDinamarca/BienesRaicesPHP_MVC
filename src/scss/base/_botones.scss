@@ -1,0 +1,48 @@
+.boton-anuncio {
+    @include boton($secundarioOscuro, 2rem, 1.5rem, $blanco, block);
+}
+
+.boton-contacto {
+    @include boton($secundarioOscuro, 2rem, 1.5rem, $blanco, inline-block);
+}
+
+.boton-enviar {
+    @include boton($verde, 1rem 2rem, 1.5rem, $blanco, inline-block);
+    margin-top: 2rem;
+}
+.boton-enviar_naranja {
+    @include boton($secundarioOscuro, 1rem 2rem, 1.5rem, $blanco, inline-block);
+    margin-top: 2rem;
+}
+
+.boton-eliminar {
+    @include boton($rojo, 1rem 2rem, 1.5rem, $blanco, block);
+    width: 100%;
+}
+.boton-actualizar {
+    @include boton($secundarioOscuro, 1rem 2rem, 1.5rem, $blanco, block);
+}
+
+.boton-global {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: $blanco;
+    border: 2px solid $blanco;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        border: 2px solid $secundario;
+    }
+
+    @include tablet {
+        font-size: 2.5rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}

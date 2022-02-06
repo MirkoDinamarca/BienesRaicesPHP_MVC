@@ -1,0 +1,19 @@
+.propiedad {
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.info-propiedad {
+    width: 80%;
+    margin: 0 auto;
+    img {
+        width: 65rem;
+    }
+
+    .precio {
+        font-size: 4rem;
+        color: $verde;
+        font-weight: bold;
+    }
+}
